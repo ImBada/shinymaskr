@@ -13,11 +13,16 @@
 // @updateURL    https://newbiepr.github.io/shinymaskr/ShinyColors.user.js
 // @supportURL   https://github.com/newbiepr/shinymaskr/issues
 // ==/UserScript==
+//커뮤 받기 버튼이 커뮤를 다운받지 않고 번역되지 않은 이미지 리스트를 다운받습니다.
+//WebP를 지원하지 않는 브라우저 ex-사파리 에서 해야 png로 받습니다.
+
 (function () {
 	'use strict';
 
-	const ENVIRONMENT = "";
-	    const DEV = false;
+	var imageLogFile = "url,name\n";
+
+	const ENVIRONMENT = "development";
+	    const DEV = true;
 	    const SHOW_UPDATE_TEXT = false;
 	    const COLLECT_CARD_RATE = false;
 
@@ -7270,7 +7275,9 @@
 	        }
 	      } else {
 	        if (DEV) {
-	          imageLog('IMAGE-MISSING', '#ff0000', this.name, originalUrl);
+			  imageLog('IMAGE-MISSING', '#ff0000', this.name, originalUrl);
+			  
+			  imageLogFile = imageLogFile + originalUrl + ',' + this.name + '\n';
 	        }
 	      }
 	    } catch (e) {}
@@ -7751,10 +7758,13 @@
 	  window.addEventListener('resize', setToolPos);
 	  const btnDl = document.getElementById('btn-download-sczh');
 	  btnDl.addEventListener('click', function () {
+		  /*
 	    if (storyCache.name) {
 	      const str = papaparse_min.unparse(storyCache.list);
 	      tryDownload(str, storyCache.filename);
-	    }
+		}
+		*/
+		tryDownload(imageLogFile, "imageLog.csv");
 	  });
 	  const btnClose = document.getElementById('btn-close-sczh');
 	  btnClose.addEventListener('click', function () {
