@@ -20,6 +20,7 @@
 	'use strict';
 
 	var imageLogFile = "url,name\n";
+	var imageLog_ex = ["content/idols/icon", "content/produce_items", "content/support_idols/icon", "content/characters/sign", "content/characters/link_skill_icon", "images/bg", "content/idols/fes_card_s", "content/idols/fes_icon", "content/produce_items/icon_l", "content/produce_items/icon_s", "content/produce_items/icon", "content/titles/icon_s", "content/unit/icon", "tutorial/mask", "images/ui/common/parts_card_frame.json_image", "images/ui/common/parts_fes_deck_rank.json_image", "images/ui/common/parts_link_skill_dialog.json_image", "images/ui/common/parts_moving_bg.json_image", "images/ui/common/parts_pagenator.json_image", "images/ui/common/parts_particles.json_image", "images/ui/common/parts_skill_lock_panel.json_image", "images/ui/fes/effects/button_shine.png", "images/ui/gasha/gradation/parts.json_image", "images/ui/my_page/mask.json_image", "images/ui/produce_deck/parts_deck_select.json_image", "images/ui/training_and_evolution/parts.json_image", "item_detail_pop_base.png", "kira.png", "my_page_idol_balloon_base.png", "particles/common/tap_effect/images.json_image", "particles/common/twinkle_orb/images.json_image", "particles/common/twinkle_side/particle.png", "particles/costume_change/images.json_image", "particles/fes/tension_check/images.json_image", "particles/fes/top_bg/particle.png", "spine/characters/cb/001", "transition_page_turn_bar.png", "twinkle_image.png", "unit_platfom_kira/particle.png"];
 
 	const ENVIRONMENT = "development";
 	    const DEV = true;
@@ -7277,7 +7278,9 @@
 	        if (DEV) {
 			  imageLog('IMAGE-MISSING', '#ff0000', this.name, originalUrl);
 			  
-			  imageLogFile = imageLogFile + originalUrl + ',' + this.name + '\n';
+			  if(!imageLog_ex.includes(this.name)){
+			  	imageLogFile = imageLogFile + originalUrl + ',' + this.name + '\n';
+			  }
 	        }
 	      }
 	    } catch (e) {}
