@@ -21,7 +21,7 @@
 
 	var imageLogFile = "url,ver,name,editedUrl,IsOutdated\n";
 	var imageLog_ex = [
-		"content/idols/icon", "content/produce_items", "content/support_idols/icon", "content/characters/sign", "content/characters/link_skill_icon", "bg", "content/idols/fes_card_s", "content/idols/fes_icon", "content/produce_items/icon_l", "content/produce_items/icon_s", "content/produce_items/icon", "content/titles/icon_s", "content/unit/icon", "tutorial/mask", "ui/common/parts_card_frame.json_image", "ui/common/parts_fes_deck_rank.json_image", "ui/common/parts_link_skill_dialog.json_image", "ui/common/parts_moving_bg.json_image", "ui/common/parts_pagenator.json_image", "ui/common/parts_particles.json_image", "ui/common/parts_skill_lock_panel.json_image", "ui/fes/effects/button_shine.png", "ui/gasha/gradation/parts.json_image", "ui/my_page/mask.json_image", "ui/produce_deck/parts_deck_select.json_image", "ui/training_and_evolution/parts.json_image", "item_detail_pop_base.png", "kira.png", "my_page_idol_balloon_base.png", "particles/common/tap_effect/images.json_image", "particles/common/twinkle_orb/images.json_image", "particles/common/twinkle_side/particle.png", "particles/costume_change/images.json_image", "particles/fes/tension_check/images.json_image", "particles/fes/top_bg/particle.png", "spine/characters", "transition_page_turn_bar.png", "twinkle_image.png", "unit_platfom_kira/particle.png", "bg", "spine/idols", "content/enhancement_items", "content/gasha_tickets/icon", "content/produce_marathons/effect", "content/home_deck_background", "content/idols/fes_card_s", "content/fes_match_grades/icon", "content/idols/costume_stand_live_icon", "content/characters/link_skill_icon", "ae/common/loading/images", "content/unit/logo", "content/unit/icon", "images/content/characters/concert_icon", "images/content/produce_area/button_l/001.png", "images/content/produce_area/button_m/001.png", "images/content/produce_area/description/001.png", "images/content/support_idols/card", "images/content/characters/stand_gasha", "images/content/idols/card", "images/content/idols/gasha_silhouette_black", "particles/gasha/relative_images_result.json_image", "images/content/characters/icon_circle", "images/content/characters/idol_road_plate", "images/content/evolution_items/icon", "images/content/exchange_items/icon", "images/content/idols/costume_stand", "images/content/idols/costume_stand_icon", "images/content/idols/costume_cb_icon", "particles/produce_end/confidence_tail/images.json_image", "particles/produce_end/feather/images.json_image", "particle_pixi_1.png", "images/content/characters/home_deck_anime_icon", "images/content/titles/icon/4000401013.png", "images/content/shop_merchandises/icon", "images/content/skins/skin_icon", "images/content/recovery_items/icon", "images/content/produce_place_categories/icon", "images/content/idols/fes_card", "images/content/idols/costume_cb_live_icon", "images/content/exchange_items/simple_icon_s/", "images/content/exchange_items/simple_icon_l", "images/content/exchange_item_shops/simple_icon_s", "images/content/exchange_item_shops/cover", "edit_mode_container_base.png", "fes_menu_base.png", "idol_list_container_base.png", "images/content/start/effect/", "ae/manpu/images", "effect_stamp_stars.png", "images/content/business/area_label/", "images/content/business/work_fg", "images/content/characters/official", "images/ui/cloth_change/parts.json_image", "images/ui/home_deck/parts_character_content.json_image", "images/ui/idol_detail/parts_produce.json_image", "images/ui/idol_road/parts_flare.json_image", "images/ui/shop/parts_shop_category_tab.json_image", "images/ui/shop/parts_small_tab.json_image", "mask.png", "particles/idol_choice/images.json_image", "particles/idol_road/images.json_image", "particles/produce_marathon/00030/twinkle.png", "spine/sub_characters/", 
+		"content/idols/icon", "content/produce_items", "content/support_idols/icon", "content/characters/sign", "content/characters/link_skill_icon", "content/idols/fes_card_s", "content/idols/fes_icon", "content/produce_items/icon_l", "content/produce_items/icon_s", "content/produce_items/icon", "content/titles/icon_s", "content/unit/icon", "tutorial/mask", "ui/common/parts_card_frame.json_image", "ui/common/parts_fes_deck_rank.json_image", "ui/common/parts_link_skill_dialog.json_image", "ui/common/parts_moving_bg.json_image", "ui/common/parts_pagenator.json_image", "ui/common/parts_particles.json_image", "ui/common/parts_skill_lock_panel.json_image", "ui/fes/effects/button_shine.png", "ui/gasha/gradation/parts.json_image", "ui/my_page/mask.json_image", "ui/produce_deck/parts_deck_select.json_image", "ui/training_and_evolution/parts.json_image", "item_detail_pop_base.png", "kira.png", "my_page_idol_balloon_base.png", "particles/common/tap_effect/images.json_image", "particles/common/twinkle_orb/images.json_image", "particles/common/twinkle_side/particle.png", "particles/costume_change/images.json_image", "particles/fes/tension_check/images.json_image", "particles/fes/top_bg/particle.png", "spine/characters", "transition_page_turn_bar.png", "twinkle_image.png", "unit_platfom_kira/particle.png", "spine/idols", "content/enhancement_items", "content/gasha_tickets/icon", "content/produce_marathons/effect", "content/home_deck_background", "content/idols/fes_card_s", "content/fes_match_grades/icon", "content/idols/costume_stand_live_icon", "content/characters/link_skill_icon", "ae/common/loading/images", "content/unit/logo", "content/unit/icon", "images/content/characters/concert_icon", "images/content/produce_area/button_l/001.png", "images/content/produce_area/button_m/001.png", "images/content/produce_area/description/001.png", "images/content/support_idols/card", "images/content/characters/stand_gasha", "images/content/idols/card", "images/content/idols/gasha_silhouette_black", "particles/gasha/relative_images_result.json_image", "images/content/characters/icon_circle", "images/content/characters/idol_road_plate", "images/content/evolution_items/icon", "images/content/exchange_items/icon", "images/content/idols/costume_stand", "images/content/idols/costume_stand_icon", "images/content/idols/costume_cb_icon", "particles/produce_end/confidence_tail/images.json_image", "particles/produce_end/feather/images.json_image", "particle_pixi_1.png", "images/content/characters/home_deck_anime_icon", "images/content/titles/icon/4000401013.png", "images/content/shop_merchandises/icon", "images/content/skins/skin_icon", "images/content/recovery_items/icon", "images/content/produce_place_categories/icon", "images/content/idols/fes_card", "images/content/idols/costume_cb_live_icon", "images/content/exchange_items/simple_icon_s/", "images/content/exchange_items/simple_icon_l", "images/content/exchange_item_shops/simple_icon_s", "images/content/exchange_item_shops/cover", "edit_mode_container_base.png", "fes_menu_base.png", "idol_list_container_base.png", "images/content/start/effect/", "ae/manpu/images", "effect_stamp_stars.png", "images/content/business/area_label/", "images/content/business/work_fg", "images/content/characters/official", "images/ui/cloth_change/parts.json_image", "images/ui/home_deck/parts_character_content.json_image", "images/ui/idol_detail/parts_produce.json_image", "images/ui/idol_road/parts_flare.json_image", "images/ui/shop/parts_shop_category_tab.json_image", "images/ui/shop/parts_small_tab.json_image", "mask.png", "particles/idol_choice/images.json_image", "particles/idol_road/images.json_image", "particles/produce_marathon/00030/twinkle.png", "spine/sub_characters/", "images/content/produce_area/description", "bg.jpg", "images/bg/017.jpg", 
 	];
 
 	const ENVIRONMENT = "development";
@@ -1896,7 +1896,7 @@
 	    log(e);
 	  }
 	};
- 
+
 	const resumeRaidGameSkill = async data => {
 	  if (!data.gameState || !data.gameState.game_data) return;
 
@@ -4662,7 +4662,7 @@
 	    log(e);
 	  }
 	};
- 
+
 	const resumeRaidGamedata = async data => {
 	  if (!data.gameState || !data.gameState.game_data) return;
 
@@ -7271,7 +7271,7 @@
 	          if (DEV) {
 				//imageLog('IMAGE', '#ed9636', this.name, originalUrl);
 				if(!imageLog_ex.some(v => this.name.includes(v)) && !imageLogFile.includes(this.name)){
-					imageLogFile = imageLogFile + originalUrl.replace(/(\?v=(.*))/g, ",$2") + ',' + this.name + "," + this.url.replace(/(\?v=.*)/g, "") + ",Latest" + '\n';
+					imageLogFile = imageLogFile + originalUrl.replace(/(\?v=(.*))/g, ",$2") + ',' + this.name.replace(/(\?v=.*)/g, "") + "," + this.url.replace(/(\?v=.*)/g, "") + ",Latest" + '\n';
 					imageLog('Edited image saved', '#ff55ff', this.name, originalUrl);
 				}
 	          }
@@ -7280,7 +7280,7 @@
 				//imageLog('IMAGE-MISMATCH', '#ff0000', this.name, originalUrl);
 				if(!imageLog_ex.some(v => this.name.includes(v)) && !imageLogFile.includes(this.name)){
 					var outdatedImage = "".concat(config.origin, "/data/image/").concat(data.url, "?v=").concat(config.hash);
-					imageLogFile = imageLogFile + originalUrl.replace(/(\?v=(.*))/g, ",$2") + ',' + this.name + "," + outdatedImage.replace(/(\?v=.*)/g, "") + ",Outdated" + '\n';
+					imageLogFile = imageLogFile + originalUrl.replace(/(\?v=(.*))/g, ",$2") + ',' + this.name.replace(/(\?v=.*)/g, "") + "," + outdatedImage.replace(/(\?v=.*)/g, "") + ",Outdated" + '\n';
 					imageLog('Outdated image saved', '#ff55ff', this.name, originalUrl);
 				}
 	          }
@@ -7288,9 +7288,9 @@
 	      } else {
 	        if (DEV) {
 			  //imageLog('IMAGE-MISSING', '#ff0000', this.name, originalUrl);
-			  
+
 				if(!imageLog_ex.some(v => this.name.includes(v)) && !imageLogFile.includes(this.name)){
-					imageLogFile = imageLogFile + originalUrl.replace(/(\?v=(.*))/g, ",$2") + ',' + this.name + '\n';
+					imageLogFile = imageLogFile + originalUrl.replace(/(\?v=(.*))/g, ",$2") + ',' + this.name.replace(/(\?v=.*)/g, "") + '\n';
 			  		imageLog('Image saved', '#ff00ff', this.name, originalUrl);
 			  	}
 	        }
@@ -8113,3 +8113,4 @@
 	}
 
 }());
+
